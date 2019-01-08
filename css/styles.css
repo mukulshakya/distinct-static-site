@@ -1,0 +1,874 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mobile-nav {
+    margin-top: 8%;
+    display: none;
+}
+.hamburger-menu {
+    margin-top: 2%;
+    width: 2em;
+    height: 1.5em;
+    transition: 500ms;
+}
+.hamburger-menu div {
+    width: 90%;
+    height: 20%;
+    margin: 0 auto;
+    background: #7a7878;
+    transition: 500ms;
+}
+.hamburger-menu div:nth-child(2) {
+    margin-top: 8%;
+}
+.hamburger-menu div:nth-child(3) {
+    margin-top: 8%;
+}
+.hamburger-menu.active .bar-one {
+    transform: rotate(45deg) translate(0.4em,0.28em);
+}
+.hamburger-menu.active .bar-two {
+    transform: rotate(-45deg);
+}
+.hamburger-menu.active .bar-three {
+    display: none;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 20%;
+    background-image: url("images/nav.jpg");
+}
+nav {
+    text-align: center;
+}
+nav .distinct {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    margin-top: 60%;
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+    background: white;
+    padding: 3% 4%;
+    border: 0.1em solid blue;
+    box-shadow: 0 0 0.2em;
+}
+nav .navbar li {
+    display: block;
+    margin: 10% 0;
+}
+nav .navbar li a {
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+    transition: color 0.1s;
+}
+#home-blue {
+    color: blue;
+}
+nav .navbar li a:hover {
+    color: blue;
+    transition: color 0.1s;
+}
+
+.main {
+    width: 79%;
+    margin-left: 20.5%;
+}
+header {
+    padding:25%;
+    margin-top: 0.5%;
+    margin-bottom: 2%;
+    background: url("images/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    overflow: hidden;
+}
+header h1 {
+    font-size: 6em;
+    color: white;
+    text-shadow: 0 0 2em black;
+}
+
+.about {
+    width: 96%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    outline: 0.2em solid #adadad;
+    outline-offset: 0.6em; 
+}
+.two {
+    background: rgb(230, 251, 252);
+    text-align: center;
+}
+.heading {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    line-height: 1.5;
+    font-size: 2em;
+}
+.line {
+    display: block;
+    width: 12%;
+    height: 0.8%;
+    margin-top: 2%;
+    background: #adadad;
+}
+.two h2 {
+    margin-top: 15%;
+}
+.two p {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 8%;
+    font-size: 1.1em;
+    line-height: 1.5;
+    word-spacing: 0.1em;
+    color: #7e7e7e;
+}
+.two a {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10%;
+    font-size: 1.5em;
+    font-weight: 550;
+    color: white;
+    background: blueviolet;
+    padding: 2% 29%;
+    border-radius: 0.3em;
+    transition: all 0.2s;
+}
+.two a:hover {
+    background: rgb(3, 44, 97);
+}
+.three {
+    width: 100%;
+    margin-top: -0.5%;
+    background: #f4e5e8;
+    text-align: right;
+}
+.three h2 {
+    margin-top: 25%;
+}
+.wrapbox {
+    width: 100%;
+}
+.bigbox {
+    width: 80%;
+    height: 3%;
+    margin-top: 10%;
+    background: whitesmoke;
+    box-shadow: inset 0 -1em 1em #dfdfdf;
+    border-radius: 2em;
+}
+.bigbox div {
+    height: 100%;
+    margin: 0;
+    background-image: repeating-linear-gradient(45deg,
+    #5a5aff,
+    #5a5aff 0.8em,
+    blue 0.8em,
+    blue 1.5em);
+    transform: scaleY(1.18);
+    border-radius: 2em;
+    animation: anima 2s linear infinite;
+    padding: 0.18% 2%;
+}
+.bigbox div span {
+    color: white;
+    font-size: 0.9em;
+    padding-top: 50%;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+}
+.smallbox1 {
+    width: 90%;
+    box-shadow: 0 0.5em 1em rgba(31, 186, 247, 0.788);
+}
+.smallbox2 {
+    width: 80%;
+    box-shadow: 0 0.5em 1em rgba(255, 99, 71, 0.651);
+}
+.smallbox3 {
+    width: 70%;
+    box-shadow: 0 0.5em 1em rgba(3, 197, 3, 0.74);
+}
+
+.three h4 {
+    margin-top: 2%;
+    margin-right: 10%;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+.heading-x {
+    margin-top: 8%;
+}
+.line-x {
+    display: block;
+    margin-top: 1%;
+    width: 8%;
+    height: 0.4em;
+    background: #adadad;
+}
+.cardwrap {
+    width: 96%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2em;
+    margin-top: 5%;
+}
+.cardwrap div {
+    text-align: center;
+    background: #e2dfdf59;
+}
+.cardwrap div div {
+    margin-top: 10%;
+}
+.cardwrap div div span {
+    letter-spacing: 0.1em;
+    word-spacing: 0.2em
+}
+.cardwrap div div h3 {
+    margin: 4%;
+    color: purple;
+    font-size: 1.5em;
+}
+.cardwrap div div p {
+    text-align: left;
+    text-align: justify;
+    font-size: 1.1em;
+    margin: 4%;
+    line-height: 1.5; 
+    color: #797878;
+}
+.cardwrap div h3 {
+    text-align: left;
+}
+
+.explore {
+    width: 98%;
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 5%;
+}
+.cards div {
+    width: 100%;
+    height: 15em;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.cards>div:nth-child(1) {
+    background: #009688;
+}
+.cards>div:nth-child(2) {
+    background: #9C27B0;
+}
+.cards>div:nth-child(3) {
+    background: #4CAF50;   
+}
+.cards>div:nth-child(4) {
+    background: #00BCD4;
+}
+.cards>div:nth-child(5) {
+    background: #E91E63;
+}
+.cards>div:nth-child(6) {
+    background: #795548;
+}
+.cards>div:nth-child(7) {
+    background: #147EFB;
+}
+.cards>div:nth-child(8) {
+    background: #F44336;
+}
+.ico1 {
+    font-size:2.5em;
+    color: #8549BA;
+    transform: translate(47%, 48%);
+}
+.ico {
+    font-size:2.5em;
+    color: #8549BA;
+    transform: translate(110%, 50%);
+}
+.cover {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0.4em 0.4em 0.6em;
+}
+.cards div div {
+    display: grid;
+    grid-row-gap: 1em;
+}
+.cards>div>div>h4 {
+    letter-spacing: 0.1em;
+    color: #fff;
+}
+
+.main2 {
+    width: 80%;
+    margin-left: 20%;
+}
+.explore2 {
+    margin-top: 4%;
+    padding: 10% 0 10% 3%;
+    background: url("images/slide.jpg");
+    background-size: cover;
+    box-sizing: border-box;
+}
+.explore2 h2 {
+    font-size: 3.5em;
+    color: #f1f0f0;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+.explore2 h3 {
+    margin: 1.5% 0;
+    color: white;
+    font-size: 2.8em;
+    width: 75%;
+    letter-spacing: 0.05em;
+}
+.explore2 p {
+    margin: 0 0 3% 0;
+    color: #f1f0f0;
+    width: 65%;
+    line-height: 1.6;
+    font-size: 1.1em;
+    letter-spacing: 0.05em;
+}
+.explore2 span {
+    padding: 1% 2%;
+    background-color: white;
+    border-radius: 0.3em;
+    transition: all 200ms;
+}
+.explore2 span:hover {
+    background-color: rgb(221, 244, 252);
+    color: blue;    
+}
+
+.contact {
+    margin-top: 5%;
+}
+.contact form {
+    margin-top: 3%;
+    width: 90%;
+}
+.contact form input::placeholder, textarea::placeholder {
+    padding: 0 0 0 0.3em;
+    color: #1a1919;
+}
+.contact form input, textarea {
+    width: 100%;
+    border: 0.1em solid black;
+    border-radius: 0.4em;
+    background: rgb(172, 232, 243);
+    box-shadow: 0 0.1em 0.2em;
+    transition: all 200ms; 
+    padding: 1.5% 3%;
+    outline: none;
+}
+.contact form input:focus, textarea:focus{
+    background: #fff;
+    border: 0.2em solid skyblue;
+    border-radius: 0.4em;
+}
+.contact form table td {
+    padding: 0 1em 0.5em 0;
+}
+.contact form table tr:nth-child(3) td:first-child {
+    transform: translateY(-1.8em);
+}
+.contact form table tr:nth-child(4) td:nth-child(2) input {
+    padding: 0.3em 44.5%;
+    background: #8549ba;
+    color: #fff;
+    font-size: 1em;
+}
+.contact form table tr:nth-child(4) td:nth-child(2) input:focus {
+    border: none;
+}
+.contact form table label {
+    font-weight: 600;
+}
+
+
+.contact-us {
+    padding: 5%;
+    text-align: center;
+    background: url("images/footer.jpg")
+}
+.contact-us span {
+    font-size: 1.1em;
+    letter-spacing: 0.05em;
+    line-height: 1.7;
+    text-decoration: none;
+    display: block;
+    color: #adadad;
+}
+.contact-us a {
+    text-decoration: none;
+    color: #adadad;
+}
+.contact-us h2 {
+    padding-bottom: 1%;
+    color: #fff;
+}
+.contact-us .follow-us {
+    padding: 4% 0 1% 0;
+}
+.contact-us ul li {
+    display: inline-block;
+    margin: 0 0.5%;
+}
+.contact-us ul li a span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    transition: all 500ms;
+}
+.contact-us ul li a span:hover {
+    filter:grayscale(50%);
+}
+.contact-us ul li a .soc1 {
+    color: white;
+    background: #4D669C;
+}
+.contact-us ul li a .soc2 {
+    color: white;
+    background: #1da1f2;
+}
+.contact-us ul li a .soc3 {
+    color: white;
+    background: #ea4c89;
+}
+.contact-us ul li a .soc4 {
+    color: white;
+    background: #0096ff;
+}
+.contact-us h3 {
+    display: block;
+    margin: 3% 0 2% 0;
+    color: rgb(236, 233, 233);
+    font-weight: 500;
+    letter-spacing: 0.03em;
+}
+.contact-us div {
+    width: 40%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-gap: 0.3em;
+}
+.contact-us div input {
+    margin: 0;
+}
+.contact-us div input[placeholder="Your Email"] {
+    font-size: 1em;
+    padding: 0 5%;
+}
+.contact-us div span {
+    margin: 0;
+    background: #673AB7;
+    padding: 10% 0;
+    color: #fff;
+}
+
+.map {
+    display: flex;
+    width: 100%;
+    margin: 3% 0 5% 0;
+}
+.map iframe {
+    display: block;
+    border: 0.4em solid #d1d0d0;
+    width: 90%;
+    height: 30em;
+    box-shadow: 0 0 0.4em #d1d0d0;
+}
+
+footer {
+    padding: 2% 0;
+    background: rgb(45, 56, 56);
+    text-align: center;
+}
+footer div {
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+footer a {
+    text-decoration: none;
+    color: #d8d5d5;
+}
+.fa-heart {
+    color: tomato;
+}
+
+@keyframes anima {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: 10em;
+    }
+}
+
+/* preloader start*/
+
+.spinner {
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+  }
+  
+  @-webkit-keyframes sk-rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+  }
+  
+  @keyframes sk-rotateplane {
+    0% { 
+      transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+    } 50% { 
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+    } 100% { 
+      transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+  }
+
+/* preloader end*/
+
+
+@media screen and (max-width: 1080px) {
+    nav .distinct {
+        font-size: 1em;
+        letter-spacing: 0.15em;
+    }
+    nav ul li a {
+        font-size: 0.7em;
+    }
+    nav ul li {
+        display: block;
+        margin: 8% 0;
+    }
+    header h1 {
+        font-size: 5em;
+    }
+    .two p {
+        font-size: 0.8em;
+    }
+    .two a {
+        font-size: 1em;
+    }
+    .three h2 {
+        margin-top: 15%;
+    }
+    .heading {
+        line-height: 1.3;
+        font-size: 1.8em;
+    }
+    .explore2 h2 {
+        font-size: 3em;
+        letter-spacing: 0.04em;
+    }
+    .explore2 h3 {
+        font-size: 2.4em;
+    }
+    .explore2 p {
+        line-height: 1.4;
+        font-size: 1em;
+    }
+    .map iframe {
+        border: 0.3em solid #d1d0d0;
+        height: 25em;
+    }
+    footer div {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    footer div {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 5%;
+    }
+    .cardwrap {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
+    nav {
+        width: 30%;
+    }
+    nav .distinct {
+        margin-top: 30%;
+    }
+    .heading {
+        line-height: 1.2;
+        font-size: 1.5em;
+    }
+    .about {
+        outline-offset: 0.4em;
+        margin-top: 1em;
+    }
+    .two p {
+        font-size: 0.75em;
+        line-height: 1.4;
+        margin: 1em 0;
+    }
+    .two a {
+        font-size: 0.9em;
+        margin: 1em 0;
+    }
+    .three h4 {
+        font-size: 0.8em;
+    }
+    .smallbox {
+        font-size: 0.6em;
+    }
+    .main {
+        width: 69%;
+        margin-left: 30.5%;
+    }
+    .main2 {
+        width: 70%;
+        margin-left: 30%;
+    }
+    .mobile-nav {
+        display: block;
+    }
+    .navbar {
+        display: none;
+    }
+    nav .navbar li {
+        margin: 8% 0;
+    }
+    nav .navbar li a {
+        font-size: 0.8em;
+        font-weight: 600;
+        text-decoration: none;
+        color: black;
+        transition: color 0.1s;
+    }
+    .contact-us span, a {
+        font-size: 1em;
+    }
+    .contact-us h3 {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    header {
+        padding: 25% 20%;
+    }
+    header h1 {
+        font-size: 5em;
+    }
+    .heading {
+        font-size: 1.3em;
+    }
+    .two p {
+        font-size: 0.7em;
+        line-height: 1.3;
+    }
+    .two a {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header h1 {
+        font-size: 4em;
+    }
+    
+    .about {
+        grid-template-columns: 1fr; 
+    }
+    .two {
+        padding-bottom: 8%; 
+    }
+    .heading {
+        font-size: 1.8em;
+    }
+    .two p {
+        margin-top: 5%;
+        font-size: 0.8em;
+        line-height: 1.5;
+    }
+    .three {
+        padding-bottom: 15%;
+    }
+    .explore2 h2 {
+        font-size: 2.5em;
+        letter-spacing: 0.03em;
+    }
+    .explore2 h3 {
+        font-size: 2em;
+    }
+    .explore2 p {
+        line-height: 1.3;
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 5%;
+    }
+    .cardwrap {
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+    }
+    footer div {
+        font-size: 0.65em;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    nav {
+        position: static;
+        height: auto;
+        width: 100%;
+        background-position: center;
+        background-size: contain;
+    }
+    nav .distinct {
+        margin-top: 5%;
+        margin-left: -8%;
+        padding: 1.6% 4%;
+    }
+    .main {
+        width: 99%;
+        margin-left: 0.5%;
+    }
+    .main2 {
+        width: 100%;
+        margin: 0;
+    }
+    nav .navbar li {
+        margin: 2% 0 0 0;
+    }
+    nav .navbar li:last-child {
+        padding-bottom: 2%;
+    }
+    .mobile-nav {
+        margin: 0;
+        padding: 2% 0;
+    }
+    footer div {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    footer div {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .contact form {
+        margin-top: 3%;
+        width: 80%;
+    }
+    footer div {
+        padding: 0 10%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 3em;
+    }
+    .contact-us span {
+        font-size: 1em;
+        letter-spacing: 0.03em;
+        line-height: 1.5;
+    }
+    .contact-us ul li a span {
+        font-size: 0.8em;
+        width: 1.8em;
+        height: 1.8em;
+    }
+    .contact-us div {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    footer div {
+        padding: 0 2%;
+    }
+    .explore2 h2 {
+        font-size: 2em;
+        letter-spacing: 0.03em;
+    }
+    .explore2 h3 {
+        font-size: 1.5em;
+    }
+    .explore2 p {
+        line-height: 1.2;
+        font-size: 0.8em;
+        width: 80%;
+    }
+    .map iframe {
+        height: 15em;
+    }
+    .contact-us h3 {
+        font-size: 0.8em;
+    }
+    .contact-us span, a {
+        font-size: 0.7em;
+    }
+    footer div a {
+        font-size: 0.9em;
+    }
+    header h1 {
+        font-size: 2.5em;
+    }
+}
